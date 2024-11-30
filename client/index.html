@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="bg-dark text-light py-4">
+        <div class="container">
+            <div class=" d-flex align-items-center justify-content-between">
+
+                <div style="width: 180px;">
+                    <h2>Online <span class="text-success"> Shop</span></h2>
+                </div>
+                <div>
+                    <a class="btn btn-success" href="/client/store/index.html">Sotib olish ro'yhati :  <span class="savatcha text-danger" id="savat"></span> </a>
+                </div>
+                <div class="btn btn-warning text-light">
+                    <a class="text-decoration-none text-light" href="/client/saved/index.html">Saved Products : <span class="text-danger" id="badge"></span> </a>
+                </div>
+                <div style="position: absolute; right: 0; top: 56px;">
+                    <button class="rounded btn btn-link" id="cherez_admin"> < </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <template class="js-template">
+        <li class="border rounded my-5" style="width: 330px; height: 400px;">
+            <div class="text-center">
+                <img class="tovarImg my-3" src="https://via.placeholder.com/300x200" alt="buning rasmi hali kelmadi !"
+                    style="width: 300px; height: 200px;">
+            </div>
+            <div class="text-center">
+                <p class="tovarName text-success fs-4">tovar name</p>
+                <p class="tovarDesc">it is tovar bor narxi qimmat click bor !</p>
+                <span class="tovarPrice text-danger mx-2">100$</span> <button
+                    class="tovarAdd rounded btn border" id="add">saqlash</button> <button
+                    class="btn btn-primary tovarShopping d-none rounded" id="cart">sotib olish</button>
+            </div>
+        </li>
+    </template>
+    <main>
+        <section>
+            <div class="container">
+                <ul class="js-list list-unstyled d-flex align-items-center justify-content-between"
+                    style="flex-wrap: wrap;">
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>

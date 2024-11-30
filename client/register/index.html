@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop / register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <p class="text-center fs-3 my-5">Register</p>
+    <div class="w-25 alert mx-auto alert-danger  text-center alert-dismissible fade show" role="alert" id="my_alert">
+        <p> all inputs required !!</p>
+        <button type="button" class="btn-close"></button>
+    </div>
+
+    <form class="mx-auto text-center mb-5 w-25" id="formEl">
+        <div><input class="form-control" name="user_name" type="text" id="name" placeholder="name"></div>
+        <div><input class="form-control my-4 " name="phone" type="number" id="phone" placeholder="phone number"></div>
+        <div><input class="form-control my-4" name="email" type="email" id="email" placeholder="email"></div>
+        <div><input class="form-control mb-4" name="password" type="text" id="password" placeholder="password"></div>
+        <div><button class="form-control my-3">yuborish</button></div>
+        <a class="text-decoration-none " href="/client/login/index.html">Login page</a>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./register.js"></script>
+</body>
+
+</html>
